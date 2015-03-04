@@ -6,12 +6,12 @@ import matplotlib.style
 
 import test_functions as t
 
-#print(matplotlib.style.available)
 matplotlib.style.use('../layout/presentation.mplstyle')
 
-fig, ax = t.sinplot()
+#fig, ax = t.sinplot()
 #fig, ax = t.bessel_plot()
 #fig, ax = t.fill_plot()
+fig, ax = t.exp_mx(4)
 ax.grid()
 ax.legend()
 

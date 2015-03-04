@@ -34,3 +34,15 @@ def fill_plot():
     ax.set_xlabel("x label")
     ax.set_ylabel("y label")
     return fig, ax
+
+def exp_mx(num=3):
+    fig, ax = plt.subplots()
+    x = np.linspace(0, 10, PTS_NUM)
+    for v in xrange(1, num):
+        y = np.exp(-x)*(x**v)
+        plt.plot(x, y, 'o-', label=r"$e^{{-x^{}}}$".format(v))
+    ax.set_title("Exponential functions")
+    ax.set_xlabel("x label")
+    ax.set_ylabel("y label")
+    return fig, ax
+
