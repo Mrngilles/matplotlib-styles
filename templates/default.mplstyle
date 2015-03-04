@@ -145,7 +145,7 @@ axes.titleweight:            normal
 axes.grid:                   False
 axes.grid.which:             major
 axes.labelsize:              medium
-axes.labelpad:               5.0
+#axes.labelpad:               5.0
 axes.labelweight:            normal
 axes.labelcolor:             black
 axes.formatter.limits:       -7, 7
@@ -160,45 +160,30 @@ axes.ymargin:                0
 polaraxes.grid: True
 axes3d.grid:    True
 
-#legend properties
+## Legend properties
 legend.fancybox:      False
-# at some point, legend.loc should be changed to 'best'
-legend.loc:           upper right
-# this option is internally ignored - it never served any useful purpose
-legend.isaxes:        True
-# the number of points in the legend line
-legend.numpoints:     2
-# the number of points in the legend line for scatter
-legend.scatterpoints: 3
+legend.loc:           upper right # at some point, legend.loc should be changed to 'best'
+legend.isaxes:        True        # this option is internally ignored - it never served any useful purpose
+legend.numpoints:     2           # the number of points in the legend line
+legend.scatterpoints: 3           # the number of points in the legend line for scatter
 legend.fontsize:      large
-# the relative size of legend markers vs. original
-legend.markerscale:   1.0
+legend.markerscale:   1.0         # the relative size of legend markers vs. original
 legend.shadow:        False
-# whether or not to draw a frame around legend
-legend.frameon:       True
-# alpha value of the legend frame
-legend.framealpha:    None
-## the following dimensions are in fraction of the font size
+legend.frameon:       True        # whether or not to draw a frame around legend
+legend.framealpha:    None        # alpha value of the legend frame
+# the following dimensions are in fraction of the font size
 legend.borderpad:     0.4
-# the vertical space between the legend entries
-legend.labelspacing:  0.5
-# the length of the legend lines
-legend.handlelength:  2.0
-# the length of the legend lines
-legend.handleheight:  0.7
-# the space between the legend line and legend text
-legend.handletextpad: 0.8
-# the border between the axes and legend edge
-legend.borderaxespad: 0.5
-# the border between the axes and legend edge
-legend.columnspacing: 2.0
-# the relative size of legend markers vs. original
-legend.markerscale:   1.0
+legend.labelspacing:  0.5         # the vertical space between the legend entries
+legend.handlelength:  2.0         # the length of the legend lines
+legend.handleheight:  0.7         # the length of the legend lines
+legend.handletextpad: 0.8         # the space between the legend line and legend text
+legend.borderaxespad: 0.5         # the border between the axes and legend edge
+legend.columnspacing: 2.0         # the border between the axes and legend edge
 legend.shadow:        False
 legend.facecolor:     None
 legend.edgecolor:     None
 
-## tick properties
+## Tick properties
 xtick.major.size:  4
 xtick.minor.size:  2
 xtick.major.width: 0.5
@@ -206,7 +191,6 @@ xtick.minor.width: 0.5
 xtick.major.pad:   4
 xtick.minor.pad:   4
 xtick.color:       black
-# fontsize of the xtick labels
 xtick.labelsize:   medium
 xtick.direction:   in
 
@@ -217,7 +201,6 @@ ytick.minor.width: 0.5
 ytick.major.pad:   4
 ytick.minor.pad:   4
 ytick.color:       black
-# fontsize of the ytick labels
 ytick.labelsize:   medium
 ytick.direction:   in
 
@@ -228,18 +211,15 @@ grid.linewidth: 0.5
 grid.alpha:     1.0
 
 ## figure properties
-# figure title
-figure.titlesize:        medium
-figure.titleweight:      normal
-# figure size in inches: width by height
-figure.figsize:          8.0, 6.0
+#figure.titlesize:        medium
+#figure.titleweight:      normal
+figure.figsize:          8.0, 6.0 # figure size in inches: width by height
 figure.dpi:              80
 figure.facecolor:        0.75
 figure.edgecolor:        white
 figure.frameon:          True
 figure.autolayout:       False
 figure.max_open_warning: 20
-
 figure.subplot.left:   0.125
 figure.subplot.right:  0.9
 figure.subplot.bottom: 0.1
@@ -254,15 +234,11 @@ savefig.edgecolor:    white
 savefig.frameon:      True
 savefig.orientation:  protrait
 savefig.jpeg_quality: 95
-# what to add to extensionless filenames
-savefig.extension:    png
-# value checked by backend at runtime
-savefig.format:       png
-# options are tight, or 'standard'. 'standard' validates to None.
-savefig.bbox:         None
+savefig.extension:    png  # what to add to extensionless filenames
+savefig.format:       png  # value checked by backend at runtime
+savefig.bbox:         None # options are tight, or 'standard'. 'standard' validates to None.
 savefig.pad_inches:   0.1
-# default directory in savefig dialog box
-savefig.directory:    ~
+savefig.directory:    ~    # default directory in savefig dialog box
 savefig.transparent:  False
 
 # Maintain shell focus for TkAgg
@@ -270,45 +246,32 @@ tk.window_focus:  False
 tk.pythoninspect: False
 
 ## PostScript save parameters
-# Set the papersize/type
-ps.papersize:     letter
+ps.papersize:     letter # Set the papersize/type
 ps.useafm:        False
-# use ghostscript or xpdf to distill ps output
-ps.usedistiller:  False
+ps.usedistiller:  False  # use ghostscript or xpdf to distill ps output
 ps.distiller.res: 6000
 ps.fonttype:      3
 
 ## PDF Save parameters
-# compression level from 0 to 9; 0 to disable
-pdf.compression:    6
-# ignore any color-setting commands from the frontend
-pdf.inheritcolor:   False
-# use only the 14 PDF core fonts embedded in every PDF viewing application
-pdf.use14corefonts: False
+pdf.compression:    6     # compression level from 0 to 9; 0 to disable
+pdf.inheritcolor:   False # ignore any color-setting commands from the frontend
+pdf.use14corefonts: False # use only the 14 PDF core fonts embedded in every PDF viewing application
 pdf.fonttype:       3
 
 ## PGF Save parameters
 pgf.debug:     False
-# choose latex application for creating pdf files (xelatex/lualatex)
-pgf.texsystem: xelatex
-# use matplotlib rc settings for font configuration
-pgf.rcfonts:   True
-# provide a custom preamble for the latex process
-pgf.preamble:
+pgf.texsystem: xelatex # choose latex application for creating pdf files (xelatex/lualatex)
+pgf.rcfonts:   True    # use matplotlib rc settings for font configuration
+pgf.preamble:          # provide a custom preamble for the latex process
 
 ## SVG Save parameters
-# write raster image data directly into the svg file
-svg.image_inline:     True
-# suppress scaling of raster data embedded in SVG
-svg.image_noscale:    False
-# True to save all characters as paths in the SVG
-svg.embed_char_paths: True
+svg.image_inline:     True              # write raster image data directly into the svg file
+svg.image_noscale:    False             # suppress scaling of raster data embedded in SVG
+svg.embed_char_paths: True              # True to save all characters as paths in the SVG
 svg.fonttype:         path
 
-# set this when you want to generate hardcopy docstring
-docstring.hardcopy: False
-# where plugin directory is locate
-plugins.directory:  .matplotlib_plugins
+docstring.hardcopy: False               # set this when you want to generate hardcopy docstring
+plugins.directory:  .matplotlib_plugins # where plugin directory is locate
 
 path.simplify:           True
 path.simplify_threshold: 1.0 / 9.0
@@ -317,7 +280,7 @@ path.sketch:             None
 path.effects:
 agg.path.chunksize:      0
 
-# key-mappings (multi-character mappings should be a list/tuple)
+## Key mappings
 keymap.fullscreen: f, ctrl+f
 keymap.home:       h, r, home
 keymap.back:       left, c, backspace
@@ -331,29 +294,20 @@ keymap.yscale:     l
 keymap.xscale:     k, L
 keymap.all_axes:   a
 
-# sample data
+## Sample data
 examples.directory:
 
-# Animation settings
+## Animation settings
 animation.writer:        ffmpeg
 animation.codec:         mpeg4
 animation.bitrate:       -1
-# Controls image format when frames are written to disk
-animation.frame_format:  png
-# Path to FFMPEG binary. If just binary name, subprocess uses $PATH.
-animation.ffmpeg_path:   ffmpeg
-# Additional arguments for ffmpeg movie writer (using pipes)
-animation.ffmpeg_args:
-# Path to AVConv binary. If just binary name, subprocess uses $PATH.
-animation.avconv_path:   avconv
-# Additional arguments for avconv movie writer (using pipes)
-animation.avconv_args:
-# Path to MENCODER binary. If just binary name, subprocess uses $PATH.
-animation.mencoder_path: mencoder
-# Additional arguments for mencoder movie writer (using pipes)
-animation.mencoder_args:
-# Path to convert binary. If just binary name, subprocess uses $PATH
-animation.convert_path:  convert
-# Additional arguments for mencoder movie writer (using pipes)
-animation.convert_args:
+animation.frame_format:  png ge format when frames are written to disk
+animation.ffmpeg_path:   ffmpeg   # Path to FFMPEG binary. If just binary name, subprocess uses $PATH.
+animation.ffmpeg_args:            # Additional arguments for ffmpeg movie writer (using pipes)
+animation.avconv_path:   avconv   # Path to AVConv binary. If just binary name, subprocess uses $PATH.
+animation.avconv_args:            # Additional arguments for avconv movie writer (using pipes)
+animation.mencoder_path: mencoder # Path to MENCODER binary. If just binary name, subprocess uses $PATH.
+animation.mencoder_args:          # Additional arguments for mencoder movie writer (using pipes)
+animation.convert_path:  convert  # Path to convert binary. If just binary name, subprocess uses $PATH
+animation.convert_args:           # Additional arguments for mencoder movie writer (using pipes)
 
