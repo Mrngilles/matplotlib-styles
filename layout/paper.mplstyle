@@ -1,0 +1,31 @@
+# Author: Marin Gilles
+# Contact: <mrngilles@gmail.com>
+# Github: Mrngilles
+#
+# Publication style :
+#
+# Provides text of proper size for an article ready figure
+# Of course, these values may change depending on the paper the figure is to be
+# published in. 
+#
+# Do not hesitate to copy and modify this style for your convenience. If you
+# happen to do it for a particular paper, please send me the modified version
+# with the exact name of the paper (and a specification format sheet, if you
+# can) so that I can make the style available using the paper name. This way,
+# you will only have to remember the paper name to get the good style on it.
+# You can find my coordinates on top of this file.
+
+## font properties
+font.family:  sans-serif
+font.size:    12
+
+# axes properties
+axes.titlesize:   17
+axes.labelsize:   14
+
+## Tick properties
+xtick.labelsize:   14
+ytick.labelsize:   14
+
+## Legend properties
+legend.fontsize : 12
