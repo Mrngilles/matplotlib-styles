@@ -15,41 +15,17 @@
 # you will only have to remember the paper name to get the good style on it.
 # You can find my coordinates on top of this file.
 
-# line properties
-#lines.linewidth:       3.0
-#lines.markersize:      10
-
-## patch properties
-#patch.linewidth:   3.0
-
 ## font properties
 font.family:  sans-serif
 font.size:    12
 
 # axes properties
-#axes.linewidth:   2.0
 axes.titlesize:   17
 axes.labelsize:   14
 
 ## Tick properties
-#xtick.major.size:  8
-#xtick.minor.size:  4
-#xtick.major.width: 2
-#xtick.minor.width: 2
-#xtick.major.pad:   8
-#xtick.minor.pad:   8
 xtick.labelsize:   14
-
-#ytick.major.size:  8
-#ytick.minor.size:  4
-#ytick.major.width: 2
-#ytick.minor.width: 2
-#ytick.major.pad:   8
-#ytick.minor.pad:   8
 ytick.labelsize:   14
-
-## Grid properties
-#grid.linewidth: 2.0
 
 ## Legend properties
 legend.fontsize : 12

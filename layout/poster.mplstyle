@@ -6,42 +6,17 @@
 #
 # Style providing larger fonts for figures to include in a poster
 # Fonts are 1.5x larger than in publication style
-
-# line properties
-#lines.linewidth:       3.0
-#lines.markersize:      10
-
-## patch properties
-#patch.linewidth:   3.0
-
 ## font properties
 font.family:  sans-serif
 font.size:    18
 
 # axes properties
-#axes.linewidth:   2.0
 axes.titlesize:   25
 axes.labelsize:   21
 
 ## Tick properties
-#xtick.major.size:  8
-#xtick.minor.size:  4
-#xtick.major.width: 2
-#xtick.minor.width: 2
-#xtick.major.pad:   8
-#xtick.minor.pad:   8
 xtick.labelsize:   21
-
-#ytick.major.size:  8
-#ytick.minor.size:  4
-#ytick.major.width: 2
-#ytick.minor.width: 2
-#ytick.major.pad:   8
-#ytick.minor.pad:   8
 ytick.labelsize:   21
-
-## Grid properties
-#grid.linewidth: 2.0
 
 ## Legend properties
 legend.fontsize : 18
