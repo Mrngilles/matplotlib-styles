@@ -1,0 +1,12 @@
+# Author: Marin Gilles
+# Contact: <mrngilles@gmail.com>
+# Github: Mrngilles
+#
+# Color cycle for matplotlib
+#
+# Colors from www.ColorBrewer.org by Cynthia A. Brewer, Geography, Pennsylvania
+# State University.
+
+axes.color_cycle: FFF5F0, FEE0D2, FCBBA1, FC9272, FB6A4A, EF3B2C, CB181D, A50F15, 67000D
+
+

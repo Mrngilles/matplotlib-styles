@@ -8,3 +8,6 @@ This is still a very early repo, do not hesitate to contribute and help developi
     + Aesthetics stylesheets (colors, fonts, etc...)
     + Layout stylesheets (paper, talks, etc...)
 
+# Contact
+If you want to contact me directly, you can write me at <mrngilles@gmail.com>.
+
